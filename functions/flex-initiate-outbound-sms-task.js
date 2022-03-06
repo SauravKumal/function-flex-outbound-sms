@@ -16,7 +16,11 @@ exports.handler = async function(context, event, callback) {
     toNumber,
     sourceChatChannelSid,
     initialNotificationMessage,
-    targetWorkerSid
+    targetWorkerSid,
+    serviceType,
+    enquiryType,
+    jobNumber,
+    updateMethod
   } = event;
   
   /**
@@ -72,7 +76,11 @@ exports.handler = async function(context, event, callback) {
       name: toName,
       from: fromNumber,
       sourceChatChannelSid,
-      targetWorkerSid
+      targetWorkerSid,
+      serviceType,
+      enquiryType,
+      jobNumber,
+      updateMethod
       // Add any of your own desired attributes here
     };
 

@@ -1,6 +1,6 @@
 
 exports.handler = async function(context, event, callback) {
-  
+  return callback(null, {});
   const {
     ACCOUNT_SID, 
     AUTH_TOKEN,
